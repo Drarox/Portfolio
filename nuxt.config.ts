@@ -8,6 +8,25 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/eslint',
     '@nuxt/icon',
-    '@nuxt/image'
-  ]
+    '@nuxt/image',
+    '@nuxtjs/i18n',
+  ],
+
+  css: ['~/assets/css/main.css'],
+
+  i18n: {
+    strategy: "no_prefix",
+    defaultLocale: "en",
+    locales: [
+      {
+        code: "fr",
+        name: "Français",
+      },
+      {
+        code: "en",
+        name: "English",
+      },
+    ],
+    vueI18n: "../i18n.config.ts",
+  },
 })

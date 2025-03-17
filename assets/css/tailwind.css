@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LAYERS */
+/* Custom base layer for html, body, and #__nuxt */
+@layer base {
+    html,
+    body,
+    #__nuxt {
+        @apply min-h-full; /* Apply height: 100% to these elements */
+        @apply h-full; /* Apply height: 100% to these elements */
+        @apply bg-white-white; /* Apply bg-white to these elements */
+        @apply text-default; /* Apply text-black to these elements */
+        @apply flex; /* Apply display: flex to these elements */
+        @apply justify-center;
+        @apply w-full; /* Apply width: 100% to these elements */
+
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    /* getting rid of vertical arrow in input type number  */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    /* prevent autofill background color in chrome*/
+    input:-webkit-autofill {
+        background-color: white !important;
+        -webkit-box-shadow: 0 0 0 1000px white inset;
+        box-shadow: 0 0 0 1000px white inset;
+    }
+
+    /*a:hover {
+        @apply text-accent;
+    }*/
+}
+
+@layer utilities {
+    .transition-basic {
+        @apply transition-all duration-300;
+    }
+
+    .flex-centered {
+        @apply flex justify-center items-center;
+    }
+
+    .scrollbar-line {
+        scroll-behaviour: smooth;
+
+        &::-webkit-scrollbar {
+            @apply h-px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #1f242f;
+        }
+    }
+
+    .stroke-round {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .border-gradient-to-r {
+        background: linear-gradient(to right, var(--tw-gradient-stops))
+        border-box;
+    }
+
+    .hidden-first-child {
+        > *:first-child {
+            @apply hidden sm:block;
+        }
+    }
+
+    .hidden-last-child {
+        > *:last-child {
+            @apply hidden sm:block;
+        }
+    }
+}
+
+@media (min-width: 896px) {
+    .w-calc-2 {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    .w-calc-3 {
+        width: calc((100% - 1rem * 2) / 3);
+    }
+
+    .w-calc-6 {
+        width: calc((100% - 1rem * 5) / 6);
+    }
+
+    .w-calc-7 {
+        width: calc((100% - 1rem * 6) / 7);
+    }
+
+    .w-calc-8 {
+        width: calc((100% - 1rem * 7) / 8);
+    }
+}
