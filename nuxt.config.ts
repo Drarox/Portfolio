@@ -14,6 +14,12 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
+
   i18n: {
     strategy: "no_prefix",
     defaultLocale: "en",
