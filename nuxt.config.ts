@@ -20,6 +20,27 @@ export default defineNuxtConfig({
     }
   },
 
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      titleTemplate: "%s %separator %siteName",
+      templateParams: {
+        siteName: "Yannick Burkard",
+        separator: "|",
+      },
+      meta: [
+        {
+          name: "description",
+          content: "Software Engineer, specializing in Backend & DevOps",
+        },
+      ],
+      link: [
+        { rel: 'icon', href: '/favicon.ico' },
+      ],
+    },
+  },
+
   i18n: {
     strategy: "no_prefix",
     defaultLocale: "en",

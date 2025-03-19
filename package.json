@@ -1,5 +1,6 @@
 {
-  "name": "nuxt-app",
+  "name": "Portfolio",
+  "description": "My personal portfolio website using Nuxt & Tailwind",
   "private": true,
   "type": "module",
   "scripts": {
