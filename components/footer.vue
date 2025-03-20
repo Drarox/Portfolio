@@ -3,7 +3,7 @@
     <div class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
       <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
         <a
-            class="inline-block rounded-full p-2 shadow-sm transition sm:p-3 lg:p-4 bg-gray-700 text-teal-300 hover:bg-gray-600  cursor-pointer"
+            class="inline-block rounded-full p-2 shadow-sm transition sm:p-3 lg:p-4 bg-gray-700 text-blue-500 hover:bg-gray-600  cursor-pointer"
             @click="scrollToTop"
         >
           <span class="sr-only">Back to top</span>
