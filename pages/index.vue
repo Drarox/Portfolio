@@ -55,7 +55,7 @@
               Passionate about technology since childhood, I’ve spent over a decade specializing in backend development and system administration. I build reliable, secure, and scalable applications with Node.js (Express, NestJS), Go, and PostgreSQL, while also managing deployments, cloud infrastructure, and server optimization with Linux and Docker.
             </p>
             <p class="mt-4 text-gray-700">
-              With a degree in Computer Science from the University of Strasbourg, I started my career in traditional software companies before transitioning to freelance. In 2020, I co-founded Oona, where I lead development as CTO, building a mobile marketing and gaming platform with Flutter that supports local businesses. We also develop custom software and game solutions for enterprise clients. My expertise spans backend architecture, cloud infrastructure, and full-stack development with modern frameworks like Nuxt and Tailwind.
+              With a degree in Computer Science from the University of Strasbourg, I started my career in traditional software companies before transitioning to freelance. In 2020, I co-founded Oona (formerly Rec'im), where I lead development as CTO, building a mobile marketing and gaming platform with Flutter that supports local businesses. We also develop custom software and game solutions for enterprise clients. My expertise spans backend architecture, cloud infrastructure, and full-stack development with modern frameworks like Nuxt and Tailwind.
             </p>
             <p class="mt-4 text-gray-700">
               I thrive on solving complex technical challenges and turning ideas into efficient, real-world solutions.
@@ -65,7 +65,7 @@
     </div>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-gray-100">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
         Technologies
@@ -208,8 +208,6 @@
       </div>
     </div>
   </section>
-
-  <Contact />
 
 </template>
 

@@ -20,6 +20,8 @@ export default defineNuxtConfig({
     }
   },
 
+  pageTransition: { name: 'page', mode: 'out-in' },
+
   app: {
     head: {
       charset: "utf-8",

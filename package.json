@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "description": "My personal portfolio website using Nuxt & Tailwind",
   "private": true,
   "type": "module",
@@ -8,7 +8,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "build-static": "npm run generate",
+    "deploy-only": "npx wrangler pages deploy .output/public/ --project-name yannick-burkard",
+    "build-and-deploy": "npm run build-static && npm run deploy-only"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.2.0",
