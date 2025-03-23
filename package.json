@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "description": "My personal portfolio website using Nuxt & Tailwind",
+  "description": "My personal portfolio website using Nuxt & Tailwind.",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,11 +1,11 @@
 <template>
-  <div class="isolate">
-    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-25rem]" aria-hidden="true">
+  <div class="isolate -z-10">
+    <div class="absolute inset-x-0 top-[-10rem] transform-gpu overflow-hidden blur-3xl sm:top-[-25rem]" aria-hidden="true">
       <div class="relative left-1/2 -z-10 aspect-1155/678 w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-green-300 via-blue-500 to-purple-600 opacity-30 sm:left-[calc(100%-40rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
   </div>
 
-  <section class="bg-gray-900 text-white h-[66vh] flex justify-center px-4">
+  <section class="bg-gray-900 text-white h-[66vh] flex justify-center px-4" id="home">
     <div class="mx-auto max-w-screen-xl flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
 
     <div class="lg:mr-16 mb-6 lg:mb-0">
@@ -43,7 +43,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="about">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 my-6">
         <div>
           <div class="max-w-lg md:max-w-none">
@@ -65,7 +65,7 @@
     </div>
   </section>
 
-  <section class="bg-gray-100">
+  <section class="bg-gray-100" id="technologies">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
         Technologies
@@ -90,7 +90,7 @@
     </div>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white" id="projects">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
         Projects
@@ -205,6 +205,20 @@
             tags="fullstack,backend,devops"
         />
 
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-6 shadow-lg sm:flex-row sm:justify-between" >
+        <strong class="text-xl text-white sm:text-xl font-bold">Got an idea or a project to discuss?</strong>
+
+        <NuxtLink to="/contact" class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-blue-500 md:text-indigo-600 hover:bg-transparent hover:text-white focus:ring-3 focus:outline-hidden">
+          <span class="text-sm font-bold"> Let's Talk! </span>
+
+          <Icon name="uil:arrow-right" class="size-5" />
+        </NuxtLink>
       </div>
     </div>
   </section>

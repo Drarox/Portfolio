@@ -25,63 +25,32 @@
 
       <div class="lg:flex lg:items-end lg:justify-between">
         <div>
-          <div class="flex justify-center lg:justify-start text-teal-300">
-            <img class="h-7" src="~/assets/img/yb_solo.svg" alt="logo">
-          </div>
+          <NuxtLink class="block" to="/#home">
+            <div class="flex justify-center lg:justify-start text-teal-300">
+              <img class="h-7" src="~/assets/img/yb_solo.svg" alt="logo">
+            </div>
+          </NuxtLink>
 
-          <p
-              class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 lg:text-left"
-          >
+          <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 lg:text-left" >
             Building Scalable & Secure Software
           </p>
         </div>
 
-        <ul
-            class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-        >
+        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12" >
           <li>
-            <a
-                class="text-white hover:text-white/75"
-                href="#"
-            >
-              Home
-            </a>
+            <NuxtLink class="text-white hover:text-white/75" to="/">Home</NuxtLink>
           </li>
 
           <li>
-            <a
-                class="text-white hover:text-white/75"
-                href="#"
-            >
-              About Me
-            </a>
+            <NuxtLink class="text-white hover:text-white/75" to="#about">About Me</NuxtLink>
           </li>
 
           <li>
-            <a
-                class="text-white hover:text-white/75"
-                href="#"
-            >
-              Services
-            </a>
+            <NuxtLink class="text-white hover:text-white/75" to="#projects">Projects</NuxtLink>
           </li>
 
           <li>
-            <a
-                class="text-white hover:text-white/75"
-                href="#"
-            >
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a
-                class="text-white hover:text-white/75"
-                href="#"
-            >
-              Contact
-            </a>
+            <NuxtLink class="text-white hover:text-white/75" to="/contact">Contact</NuxtLink>
           </li>
         </ul>
       </div>
