@@ -32,37 +32,52 @@
           </NuxtLink>
 
           <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-400 lg:text-left" >
-            Building Scalable & Secure Software
+            {{ $t('footer.subtitle') }}
           </p>
         </div>
 
         <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12" >
           <li>
-            <NuxtLink class="text-white hover:text-white/75" to="/">Home</NuxtLink>
+            <NuxtLink class="text-white hover:text-white/75" to="/">{{ $t('footer.nav.home') }}</NuxtLink>
           </li>
 
           <li>
-            <NuxtLink class="text-white hover:text-white/75" to="#about">About Me</NuxtLink>
+            <NuxtLink class="text-white hover:text-white/75" to="#about">{{ $t('footer.nav.about') }}</NuxtLink>
           </li>
 
           <li>
-            <NuxtLink class="text-white hover:text-white/75" to="#projects">Projects</NuxtLink>
+            <NuxtLink class="text-white hover:text-white/75" to="#projects">{{ $t('footer.nav.projects') }}</NuxtLink>
           </li>
 
           <li>
-            <NuxtLink class="text-white hover:text-white/75" to="/contact">Contact</NuxtLink>
+            <NuxtLink class="text-white hover:text-white/75" to="/contact">{{ $t('footer.nav.contact') }}</NuxtLink>
           </li>
         </ul>
       </div>
 
-      <p class="mt-12 text-center text-sm lg:text-right text-gray-400">
-        Copyright &copy; {{ new Date().getFullYear() }}. All rights reserved.
-      </p>
+      <ul class="flex flex-wrap items-center justify-center mt-12 text-sm text-gray-400">
+        <li>
+          <a :class="{ 'underline': $i18n.locale === 'en' }" @click="setLocale('en')" class="hover:underline cursor-pointer">English</a> /
+          <a :class="{ 'underline': $i18n.locale === 'fr' }" @click="setLocale('fr')" class="me-4 hover:underline md:me-6 cursor-pointer">Français</a>
+        </li>
+        <li>
+          <a href="#" class="me-4 hover:underline md:me-6">{{ $t('footer.legal') }}</a>
+        </li>
+        <li>
+          Copyright &copy; {{ new Date().getFullYear() }}
+        </li>
+      </ul>
+
+<!--      <p class="mt-12 text-center text-sm text-gray-400">-->
+<!--        Copyright &copy; {{ new Date().getFullYear() }}. All rights reserved.-->
+<!--      </p>-->
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
+const { setLocale } = useI18n();
+
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };

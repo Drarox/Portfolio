@@ -57,12 +57,12 @@ const props = defineProps<{
     <dl class="mt-5 flex gap-4 sm:gap-6">
       <div class="flex flex-col-reverse" v-if="published">
         <dd class="text-xs text-gray-500">{{published}}</dd>
-        <dt class="text-sm font-medium text-gray-600">Published</dt>
+        <dt class="text-sm font-medium text-gray-600">{{ $t('projects.published') }}</dt>
       </div>
 
       <div class="flex flex-col-reverse" v-if="framework">
         <dd class="text-xs text-gray-500">{{framework}}</dd>
-        <dt class="text-sm font-medium text-gray-600">Framework</dt>
+        <dt class="text-sm font-medium text-gray-600">{{$t('projects.framework')}}</dt>
       </div>
     </dl>
   </a>

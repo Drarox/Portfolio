@@ -18,7 +18,7 @@
         </h1>
 
         <p class="mt-4 max-w-xl sm:text-xl/relaxed">
-          Software Engineer, specializing in Backend & DevOps
+          {{ $t('home.subtitle') }}
         </p>
 
         <div class="mt-4 max-w-xl sm:text-xl/relaxed">
@@ -48,17 +48,17 @@
         <div>
           <div class="max-w-lg md:max-w-none">
             <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-12">
-              About Me
+              {{ $t('about.title') }}
             </h2>
 
             <p class="mt-4 text-gray-700">
-              Passionate about technology since childhood, I’ve spent over a decade specializing in backend development and system administration. I build reliable, secure, and scalable applications with Node.js (Express, NestJS), Go, and PostgreSQL, while also managing deployments, cloud infrastructure, and server optimization with Linux and Docker.
+              {{ $t('about.text1') }}
             </p>
             <p class="mt-4 text-gray-700">
-              With a degree in Computer Science from the University of Strasbourg, I started my career in traditional software companies before transitioning to freelance. In 2020, I co-founded Oona (formerly Rec'im), where I lead development as CTO, building a mobile marketing and gaming platform with Flutter that supports local businesses. We also develop custom software and game solutions for enterprise clients. My expertise spans backend architecture, cloud infrastructure, and full-stack development with modern frameworks like Nuxt and Tailwind.
+              {{ $t('about.text2') }}
             </p>
             <p class="mt-4 text-gray-700">
-              I thrive on solving complex technical challenges and turning ideas into efficient, real-world solutions.
+              {{ $t('about.text3') }}
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@
   <section class="bg-gray-100" id="technologies">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
-        Technologies
+        {{ $t('technologies.title') }}
       </h2>
 
       <UCarousel
@@ -93,16 +93,16 @@
   <section class="bg-white" id="projects">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
       <h2 class="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Projects
+        {{ $t('projects.title') }}
       </h2>
 
-      <p class="mt-4 text-center text-gray-700">Selection of my some of my projects</p>
+      <p class="mt-4 text-center text-gray-700">{{ $t('projects.subtitle') }}</p>
 
       <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
 
         <ProjectCard
-            title="Oona"
-            desc="Mobile & Web marketing and gaming platform that supports local businesses."
+            :title="t('projects.oona.title')"
+            :desc="t('projects.oona.desc')"
             published="2020"
             framework="Flutter & Express"
             tags="Full Stack,Mobile,Backend,devops"
@@ -110,8 +110,8 @@
             link="https://oona.win"
         />
         <ProjectCard
-            title="VAN DAMME : Dawn of Chihuahuas"
-            desc="Endless runner game with JCVD to rescue dogs."
+            :title="t('projects.dotc.title')"
+            :desc="t('projects.dotc.desc')"
             published="2023"
             framework="Unity & NestJS"
             tags="Backend,Mobile,devops"
@@ -119,8 +119,8 @@
             link="https://awarecorp-studios.com/dawn-of-the-chihuahuas/"
         />
         <ProjectCard
-            title="Zak & Wowo"
-            desc="Mobile game for the movie Zak & Wowo."
+            :title="t('projects.zw.title')"
+            :desc="t('projects.zw.desc')"
             published="2024"
             framework="Unity & NestJS"
             tags="Backend,Mobile,devops"
@@ -128,41 +128,32 @@
             link="https://oona-website.pages.dev/Zak&Wowo"
         />
         <ProjectCard
-            title="Onao"
-            desc="Real estate website with an interactive 3D map."
-            published="2024"
-            framework="Nuxt & NestJS"
-            tags="Full Stack,Backend,devops"
-            img="/img/projects/onao.png"
-            link="https://beta.onao.com/"
-        />
-        <ProjectCard
-            title="Rec'im Business"
-            desc="Dashboard for businesses to interact with the Rec'im app."
+            :title="t('projects.recim_business.title')"
+            :desc="t('projects.recim_business.desc')"
             published="2020"
             framework="Angular & Express"
             img="/img/projects/recim.png"
             tags="fullstack,backend,devops"
         />
         <ProjectCard
-            title="Marketing Backoffice"
-            desc="Backoffice for marketing experience for multiple clients like Yves Saint Laurent, Kenzo, Hugo Boss, Lancôme, Versace, and others."
+            :title="t('projects.onao.title')"
+            :desc="t('projects.onao.desc')"
+            published="2024"
+            framework="Nuxt & NestJS"
+            tags="Full Stack,Backend,devops"
+            img="/img/projects/onao.png"
+            link="https://beta.onao.com/map"
+        />
+        <ProjectCard
+            :title="t('projects.marketing_backoffice.title')"
+            :desc="t('projects.marketing_backoffice.desc')"
             published="2022"
             framework="Vue & Express"
             tags="fullstack,backend,devops"
         />
         <ProjectCard
-            title="GoogleYoutubeRedirect"
-            desc="Browser extension to redirect Google search results to YouTube videos for Chrome, Brave, Edge, Firefox."
-            published="2023"
-            framework="Javascript"
-            tags="other,opensource"
-            img="/img/projects/gy.png"
-            link="https://github.com/Drarox/GoogleYoutubeRedirect"
-        />
-        <ProjectCard
-            title="Node_Milight_API"
-            desc="Simple API running in NodeJS Express for controlling your Mi-Light lights. Compatible Google Home and Amazon Alexa."
+            :title="t('projects.node_milight.title')"
+            :desc="t('projects.node_milight.desc')"
             published="2020"
             framework="Node.js"
             img="github"
@@ -170,8 +161,8 @@
             link="https://github.com/Drarox/Node_Milight_API"
         />
         <ProjectCard
-            title="DeepSeek-Ext"
-            desc="Simple DeepSeek Chat VSCode Extension using Ollama locally."
+            :title="t('projects.deepseek.title')"
+            :desc="t('projects.deepseek.desc')"
             published="2025"
             framework="TypeScript"
             img="github"
@@ -179,17 +170,17 @@
             link="https://github.com/Drarox/DeepSeek-Ext"
         />
         <ProjectCard
-            title="Portfolio"
-            desc="My personal portfolio website using Nuxt & Tailwind."
-            published="2025"
-            framework="Nuxt"
-            tags="Full Stack,opensource,devops"
-            img="github"
-            link="https://github.com/Drarox/portfolio"
+            :title="t('projects.google_youtube_redirect.title')"
+            :desc="t('projects.google_youtube_redirect.desc')"
+            published="2023"
+            framework="Javascript"
+            tags="other,opensource"
+            img="/img/projects/gy.png"
+            link="https://github.com/Drarox/GoogleYoutubeRedirect"
         />
         <ProjectCard
-            title="Flutter_2048"
-            desc="Simple 2048 game made with Flutter for iOS, Android and Web."
+            :title="t('projects.flutter2048.title')"
+            :desc="t('projects.flutter2048.desc')"
             published="2020"
             framework="Flutter"
             tags="mobile,open source"
@@ -197,8 +188,17 @@
             link="https://github.com/Drarox/Flutter_2048"
         />
         <ProjectCard
-            title="SecuSend"
-            desc="Send secure encrypted messages with self-destructing links."
+            :title="t('projects.portfolio.title')"
+            :desc="t('projects.portfolio.desc')"
+            published="2025"
+            framework="Nuxt"
+            tags="Full Stack,opensource,devops"
+            img="github"
+            link="https://github.com/Drarox/portfolio"
+        />
+        <ProjectCard
+            :title="t('projects.secusend.title')"
+            :desc="t('projects.secusend.desc')"
             published="2023"
             framework="Vue & Go"
             img="github"
@@ -212,10 +212,10 @@
   <section>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-6 shadow-lg sm:flex-row sm:justify-between" >
-        <strong class="text-xl text-white sm:text-xl font-bold">Got an idea or a project to discuss?</strong>
+        <strong class="text-xl text-white sm:text-xl font-bold">{{ $t('lets_talk.title') }}</strong>
 
         <NuxtLink to="/contact" class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-blue-500 md:text-indigo-600 hover:bg-transparent hover:text-white focus:ring-3 focus:outline-hidden">
-          <span class="text-sm font-bold"> Let's Talk! </span>
+          <span class="text-sm font-bold"> {{ $t('lets_talk.button') }} </span>
 
           <Icon name="uil:arrow-right" class="size-5" />
         </NuxtLink>
@@ -226,6 +226,8 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const techItems = [
   '/img/tech/node.png',
   '/img/tech/nest.png',

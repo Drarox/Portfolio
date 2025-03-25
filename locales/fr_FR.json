@@ -1,1 +1,93 @@
-{}
+{
+  "home": {
+    "subtitle": "Ingénieur logiciel, spécialisé en Backend & DevOps"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "text1": "Passionné de technologie depuis mon enfance, j’ai passé plus de dix ans à me spécialiser dans le développement backend et l’administration système. Je conçois des applications fiables, sécurisées et évolutives avec Node.js (Express, NestJS), Go et PostgreSQL, tout en gérant le déploiement, l’infrastructure cloud et l’optimisation des serveurs sous Linux et Docker.",
+    "text2": "Diplômé en Informatique de l’Université de Strasbourg, j’ai débuté ma carrière dans des entreprises de développement logiciel avant de me lancer en freelance. En 2020, j’ai cofondé Oona (anciennement Rec'im), où je dirige le développement en tant que CTO. Nous avons créé une plateforme de marketing mobile et de gamification, développée avec Flutter, pour soutenir les commerces locaux. Nous réalisons également des solutions logicielles et des jeux sur mesure pour les entreprises.",
+    "text3": "Mon expertise couvre l’architecture backend, l’infrastructure cloud et le développement full-stack avec des frameworks modernes comme Nuxt et Tailwind. J’aime relever des défis techniques complexes et transformer des idées en solutions concrètes et performantes."
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Sélection de quelques-uns de mes projets",
+    "published": "Publié",
+    "framework": "Framework",
+    "oona": {
+      "title": "Oona",
+      "desc": "Plateforme mobile et web de marketing et de jeu, soutenant les commerces locaux."
+    },
+    "dotc": {
+      "title": "VAN DAMME : Dawn of Chihuahuas",
+      "desc": "Jeu de type runner infini avec JCVD pour sauver des chiens."
+    },
+    "zw": {
+      "title": "Zak & Wowo",
+      "desc": "Jeu mobile pour le film Zak & Wowo."
+    },
+    "recim_business": {
+      "title": "Rec'im Business",
+      "desc": "Tableau de bord permettant aux entreprises d’interagir avec l’application Rec'im."
+    },
+    "onao": {
+      "title": "Onao",
+      "desc": "Site immobilier avec une carte interactive en 3D."
+    },
+    "marketing_backoffice": {
+      "title": "Backoffice Marketing",
+      "desc": "Backoffice pour expériences marketing pour plusieurs clients comme Yves Saint Laurent, Kenzo, Hugo Boss, Lancôme, Versace, et d’autres."
+    },
+    "node_milight": {
+      "title": "Node_Milight_API",
+      "desc": "Simple API en Node.js Express permettant de contrôler vos lumières Mi-Light. Compatible avec Google Home et Amazon Alexa."
+    },
+    "deepseek": {
+      "title": "DeepSeek-Ext",
+      "desc": "Simple extension VSCode pour DeepSeek Chat utilisant Ollama en local."
+    },
+    "google_youtube_redirect": {
+      "title": "GoogleYoutubeRedirect",
+      "desc": "Extension de navigateur permettant de rediriger les résultats de recherche Google vers des vidéos YouTube, compatible avec Chrome, Brave, Edge et Firefox."
+    },
+    "flutter2048": {
+      "title": "Flutter_2048",
+      "desc": "Jeu 2048 développé avec Flutter pour iOS, Android et le Web."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "desc": "Mon site portfolio personnel utilisant Nuxt & Tailwind."
+    },
+    "secusend": {
+      "title": "SecuSend",
+      "desc": "Envoi de messages sécurisés et chiffrés avec des liens autodestructeurs."
+    }
+  },
+  "lets_talk": {
+    "title": "Une idée ou un projet à discuter ?",
+    "button": "Discutons-en !"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Une idée ou un projet à discuter ?",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "company": "Entreprise",
+    "email": "E-mail",
+    "phone": "Numéro de téléphone",
+    "message": "Message",
+    "send": "Envoyer le message"
+  },
+  "footer": {
+    "subtitle": "Développement de logiciels évolutifs et sécurisés",
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "legal": "Mentions légales"
+  }
+}

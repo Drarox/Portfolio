@@ -1,1 +1,93 @@
-{}
+{
+  "home":{
+    "subtitle": "Software Engineer, specializing in Backend & DevOps"
+  },
+  "about":{
+    "title": "About Me",
+    "text1": "Passionate about technology since childhood, I’ve spent over a decade specializing in backend development and system administration. I build reliable, secure, and scalable applications with Node.js (Express, NestJS), Go, and PostgreSQL, while also managing deployments, cloud infrastructure, and server optimization with Linux and Docker.",
+    "text2": "With a degree in Computer Science from the University of Strasbourg, I started my career in traditional software companies before transitioning to freelance. In 2020, I co-founded Oona (formerly Rec'im), where I lead development as CTO, building a mobile marketing and gaming platform with Flutter that supports local businesses. We also develop custom software and game solutions for enterprise clients. My expertise spans backend architecture, cloud infrastructure, and full-stack development with modern frameworks like Nuxt and Tailwind.",
+    "text3": "I thrive on solving complex technical challenges and turning ideas into efficient, real-world solutions."
+  },
+  "technologies":{
+    "title": "Technologies"
+  },
+  "projects":{
+    "title": "Projects",
+    "subtitle": "Selection of my some of my projects",
+    "published": "Published",
+    "framework": "Framework",
+    "oona":{
+      "title": "Oona",
+      "desc": "Mobile & Web marketing and gaming platform that supports local businesses."
+    },
+    "dotc":{
+      "title": "VAN DAMME : Dawn of Chihuahuas",
+      "desc": "Endless runner game with JCVD to rescue dogs."
+    },
+    "zw":{
+      "title": "Zak & Wowo",
+      "desc": "Mobile game for the movie Zak & Wowo."
+    },
+    "recim_business":{
+      "title": "Rec'im Business",
+      "desc": "Dashboard for businesses to interact with the Rec'im app."
+    },
+    "onao": {
+      "title": "Onao",
+      "desc": "Real estate website with an interactive 3D map."
+    },
+    "marketing_backoffice": {
+      "title": "Marketing Backoffice",
+      "desc": "Backoffice for marketing experience for multiple clients like Yves Saint Laurent, Kenzo, Hugo Boss, Lancôme, Versace, and others."
+    },
+    "node_milight": {
+      "title": "Node_Milight_API",
+      "desc": "Simple API running in NodeJS Express for controlling your Mi-Light lights. Compatible Google Home and Amazon Alexa."
+    },
+    "deepseek": {
+      "title": "DeepSeek-Ext",
+      "desc": "Simple DeepSeek Chat VSCode Extension using Ollama locally."
+    },
+    "google_youtube_redirect": {
+      "title": "GoogleYoutubeRedirect",
+      "desc": "Browser extension to redirect Google search results to YouTube videos for Chrome, Brave, Edge, Firefox."
+    },
+    "flutter2048": {
+      "title": "Flutter_2048",
+      "desc": "Simple 2048 game made with Flutter for iOS, Android and Web."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "desc": "My personal portfolio website using Nuxt & Tailwind."
+    },
+    "secusend": {
+      "title": "SecuSend",
+      "desc": "Send secure encrypted messages with self-destructing links."
+    }
+  },
+  "lets_talk":{
+    "title": "Got an idea or a project to discuss?",
+    "button": "Let's Talk!"
+  },
+  "contact":{
+    "title": "Let's Talk!",
+    "subtitle": "Got an idea or a project to discuss?",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone number",
+    "message": "Message",
+    "send": "Send message"
+  },
+  "footer":{
+    "subtitle": "Building Scalable & Secure Software",
+    "nav": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "legal": "Legal Notices"
+  }
+}
