@@ -39,9 +39,19 @@ async function submitForm() {
 
   try {
     // Send POST request
-    const { error } = await useFetch("https://api.yannick-burkard.eu.org/api/contact", {
+    const { error } = await useFetch("https://api.yannick-burkard.eu.org/api/mail/contact", {
       method: "POST",
-      body: { message: `Name: ${firstName.value} ${lastName.value}\nCompany: ${company.value}\nEmail: ${email.value}\nPhone: ${phoneNumber.value}\nMessage: ${message.value}` },
+      body: {
+        source: "yannick-burkard.eu.org",
+        content: `
+      <p><strong>Name:</strong> ${firstName.value} ${lastName.value}</p>
+      <p><strong>Company:</strong> ${company.value}</p>
+      <p><strong>Email:</strong> ${email.value}</p>
+      <p><strong>Phone:</strong> ${phoneNumber.value}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message.value.replace(/\n/g, "<br>")}</p>
+    `,
+      },
     });
 
     if (error.value) throw new Error("Failed to send message");

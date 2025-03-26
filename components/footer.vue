@@ -61,7 +61,7 @@
           <a :class="{ 'underline': $i18n.locale === 'fr' }" @click="setLocale('fr')" class="me-4 hover:underline md:me-6 cursor-pointer">Français</a>
         </li>
         <li>
-          <a href="#" class="me-4 hover:underline md:me-6">{{ $t('footer.legal') }}</a>
+          <NuxtLink to="/legal" class="me-4 hover:underline md:me-6">{{ $t('footer.legal') }}</NuxtLink>
         </li>
         <li>
           Copyright &copy; {{ new Date().getFullYear() }}
