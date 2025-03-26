@@ -3,7 +3,7 @@
     <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
       <NuxtLink class="block" to="/">
         <span class="sr-only">Home</span>
-        <img class="h-7" src="~/assets/img/yb_solo.svg" alt="logo">
+        <img class="h-7" src="/img/yb_solo.svg" alt="logo">
       </NuxtLink>
 
       <div class="flex flex-1 items-center justify-end md:justify-between">

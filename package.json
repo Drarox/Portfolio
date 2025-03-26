@@ -10,7 +10,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "build-static": "npm run generate",
-    "deploy-only": "npx wrangler pages deploy .output/public/ --project-name yannick-burkard",
+    "deploy-only": "npx wrangler pages deploy .output/public/ --project-name yannick-burkard --branch=main",
     "build-and-deploy": "npm run build-static && npm run deploy-only"
   },
   "dependencies": {

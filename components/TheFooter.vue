@@ -27,7 +27,7 @@
         <div>
           <NuxtLink class="block" to="/#home">
             <div class="flex justify-center lg:justify-start text-teal-300">
-              <img class="h-7" src="~/assets/img/yb_solo.svg" alt="logo">
+              <img class="h-7" src="/img/yb_solo.svg" alt="logo">
             </div>
           </NuxtLink>
 
@@ -57,8 +57,8 @@
 
       <ul class="flex flex-wrap items-center justify-center mt-12 text-sm text-gray-400">
         <li>
-          <a :class="{ 'underline': $i18n.locale === 'en' }" @click="setLocale('en')" class="hover:underline cursor-pointer">English</a> /
-          <a :class="{ 'underline': $i18n.locale === 'fr' }" @click="setLocale('fr')" class="me-4 hover:underline md:me-6 cursor-pointer">Français</a>
+          <a :class="{ 'underline': $i18n.locale === 'en' }" class="hover:underline cursor-pointer" @click="setLocale('en')">English</a> /
+          <a :class="{ 'underline': $i18n.locale === 'fr' }" class="me-4 hover:underline md:me-6 cursor-pointer" @click="setLocale('fr')">Français</a>
         </li>
         <li>
           <NuxtLink to="/legal" class="me-4 hover:underline md:me-6">{{ $t('footer.legal') }}</NuxtLink>

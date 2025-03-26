@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-import Header from "~/components/header.vue";
-import Footer from "~/components/footer.vue";
+import TheHeader from "~/components/TheHeader.vue";
+import TheFooter from "~/components/TheFooter.vue";
 </script>
 
 <template>
-  <NuxtLoadingIndicator :throttle="0" :duration="3000"/>
+  <div id="default">
+    <NuxtLoadingIndicator :throttle="0" :duration="3000"/>
 
-  <Header />
+    <TheHeader />
 
-  <slot/>
+    <slot/>
 
-  <Footer />
-
+    <TheFooter />
+  </div>
 </template>
