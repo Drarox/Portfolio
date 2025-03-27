@@ -1,75 +1,16 @@
-# Nuxt Minimal Starter
+# Personal Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal portfolio built with [Nuxt 3](https://nuxt.com/) and [Tailwind CSS v4](https://tailwindcss.com/).
 
-## Setup
+## 🚀 Features
+- Built with Nuxt 3 and Tailwind CSS v4
+- Fully responsive 
+- SEO optimized
 
-Make sure to install dependencies:
+## 🌍 Live Preview
+Check out my portfolio live at: [yannick-burkard.eu.org](https://yannick-burkard.eu.org/)
 
-```bash
-# npm
-npm install
+## 📜 License
+Licensed under the MIT License.
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
