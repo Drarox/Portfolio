@@ -58,7 +58,7 @@
     },
     "portfolio": {
       "title": "Portfolio",
-      "desc": "My personal portfolio website using Nuxt & Tailwind."
+      "desc": "My personal portfolio website remade with Nuxt & Tailwind."
     },
     "secusend": {
       "title": "SecuSend",
