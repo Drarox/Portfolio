@@ -63,6 +63,10 @@
     "secusend": {
       "title": "SecuSend",
       "desc": "Envoi de messages sécurisés et chiffrés avec des liens autodestructeurs."
+    },
+    "backend_benchmark": {
+      "title": "Backend Benchmark",
+      "desc": "Benchmarker de framework backend en Javascript, Python et Go."
     }
   },
   "lets_talk": {

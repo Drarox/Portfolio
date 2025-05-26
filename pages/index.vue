@@ -153,6 +153,15 @@
               tags="fullstack,backend,devops"
           />
           <ProjectCard
+              :title="t('projects.flutter2048.title')"
+              :desc="t('projects.flutter2048.desc')"
+              published="2020"
+              framework="Flutter"
+              tags="mobile,open source"
+              img="/img/projects/2048.png"
+              link="https://github.com/Drarox/Flutter_2048"
+          />
+          <ProjectCard
               :title="t('projects.node_milight.title')"
               :desc="t('projects.node_milight.desc')"
               published="2020"
@@ -160,15 +169,6 @@
               img="github"
               tags="Backend,opensource,devops"
               link="https://github.com/Drarox/Node_Milight_API"
-          />
-          <ProjectCard
-              :title="t('projects.deepseek.title')"
-              :desc="t('projects.deepseek.desc')"
-              published="2025"
-              framework="TypeScript"
-              img="github"
-              tags="other,opensource"
-              link="https://github.com/Drarox/DeepSeek-Ext"
           />
           <ProjectCard
               :title="t('projects.google_youtube_redirect.title')"
@@ -180,13 +180,22 @@
               link="https://github.com/Drarox/GoogleYoutubeRedirect"
           />
           <ProjectCard
-              :title="t('projects.flutter2048.title')"
-              :desc="t('projects.flutter2048.desc')"
-              published="2020"
-              framework="Flutter"
-              tags="mobile,open source"
-              img="/img/projects/2048.png"
-              link="https://github.com/Drarox/Flutter_2048"
+              :title="t('projects.backend_benchmark.title')"
+              :desc="t('projects.backend_benchmark.desc')"
+              published="2025"
+              framework="Bash & Python"
+              tags="backend,opensource,devops"
+              img="github"
+              link="https://github.com/Drarox/Backend-Benchmark"
+          />
+          <ProjectCard
+              :title="t('projects.deepseek.title')"
+              :desc="t('projects.deepseek.desc')"
+              published="2025"
+              framework="TypeScript"
+              img="github"
+              tags="other,opensource"
+              link="https://github.com/Drarox/DeepSeek-Ext"
           />
           <ProjectCard
               :title="t('projects.portfolio.title')"
@@ -197,14 +206,14 @@
               img="github"
               link="https://github.com/Drarox/portfolio"
           />
-          <ProjectCard
-              :title="t('projects.secusend.title')"
-              :desc="t('projects.secusend.desc')"
-              published="2023"
-              framework="Vue & Go"
-              img="github"
-              tags="fullstack,backend,devops"
-          />
+<!--          <ProjectCard-->
+<!--              :title="t('projects.secusend.title')"-->
+<!--              :desc="t('projects.secusend.desc')"-->
+<!--              published="2023"-->
+<!--              framework="Vue & Go"-->
+<!--              img="github"-->
+<!--              tags="fullstack,backend,devops"-->
+<!--          />-->
 
         </div>
       </div>

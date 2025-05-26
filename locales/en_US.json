@@ -63,6 +63,10 @@
     "secusend": {
       "title": "SecuSend",
       "desc": "Send secure encrypted messages with self-destructing links."
+    },
+    "backend_benchmark": {
+      "title": "Backend Benchmark",
+      "desc": "Benchmark Javascript, Python and Go backends frameworks."
     }
   },
   "lets_talk":{
