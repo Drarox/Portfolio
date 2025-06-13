@@ -162,13 +162,13 @@
               link="https://github.com/Drarox/Flutter_2048"
           />
           <ProjectCard
-              :title="t('projects.node_milight.title')"
-              :desc="t('projects.node_milight.desc')"
-              published="2020"
-              framework="Node.js"
+              :title="t('projects.enphasy.title')"
+              :desc="t('projects.enphasy.desc')"
+              published="2025"
+              framework="Bun & Hono.js"
               img="github"
               tags="Backend,opensource,devops"
-              link="https://github.com/Drarox/Node_Milight_API"
+              link="https://github.com/Drarox/enphasy"
           />
           <ProjectCard
               :title="t('projects.google_youtube_redirect.title')"

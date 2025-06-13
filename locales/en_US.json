@@ -40,9 +40,9 @@
       "title": "Marketing Backoffice",
       "desc": "Backoffice for marketing experience for multiple clients like Yves Saint Laurent, Kenzo, Hugo Boss, Lancôme, Versace, and others."
     },
-    "node_milight": {
-      "title": "Node_Milight_API",
-      "desc": "Simple API running in NodeJS Express for controlling your Mi-Light lights. Compatible Google Home and Amazon Alexa."
+    "enphasy": {
+      "title": "Enphasy",
+      "desc": "A lightweight Enphase data sync tool using the cloud API. Fetches and stores solar production, consumption, import/export data automatically."
     },
     "deepseek": {
       "title": "DeepSeek-Ext",
@@ -53,7 +53,7 @@
       "desc": "Browser extension to redirect Google search results to YouTube videos for Chrome, Brave, Edge, Firefox."
     },
     "flutter2048": {
-      "title": "Flutter_2048",
+      "title": "Flutter 2048",
       "desc": "Simple 2048 game made with Flutter for iOS, Android and Web."
     },
     "portfolio": {
