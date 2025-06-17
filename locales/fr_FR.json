@@ -40,9 +40,9 @@
       "title": "Backoffice Marketing",
       "desc": "Backoffice pour expériences marketing pour plusieurs clients comme Yves Saint Laurent, Kenzo, Hugo Boss, Lancôme, Versace, et d’autres."
     },
-    "enphasy": {
-      "title": "Enphasy",
-      "desc": "Un outil léger de synchronisation des données solaire utilisant l'API cloud Enphase."
+    "node_milight": {
+      "title": "Node_Milight_API",
+      "desc": "Simple API en Node.js Express permettant de contrôler vos lumières Mi-Light. Compatible avec Google Home et Amazon Alexa."
     },
     "deepseek": {
       "title": "DeepSeek-Ext",
@@ -67,6 +67,14 @@
     "backend_benchmark": {
       "title": "Backend Benchmark",
       "desc": "Benchmarker de framework backend en Javascript, Python et Go."
+    },
+    "enphasy": {
+      "title": "Enphasy",
+      "desc": "Un outil léger de synchronisation des données solaire utilisant l'API cloud Enphase."
+    },
+    "json2zod": {
+      "title": "Json2Zod",
+      "desc": "Un outil CLI et une bibliothèque pour convertir  JSON en schémas Zod avec des exemples OpenAPI facultatifs."
     }
   },
   "lets_talk": {

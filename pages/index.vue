@@ -171,24 +171,6 @@
               link="https://github.com/Drarox/enphasy"
           />
           <ProjectCard
-              :title="t('projects.google_youtube_redirect.title')"
-              :desc="t('projects.google_youtube_redirect.desc')"
-              published="2023"
-              framework="Javascript"
-              tags="other,opensource"
-              img="/img/projects/gy.png"
-              link="https://github.com/Drarox/GoogleYoutubeRedirect"
-          />
-          <ProjectCard
-              :title="t('projects.backend_benchmark.title')"
-              :desc="t('projects.backend_benchmark.desc')"
-              published="2025"
-              framework="Bash & Python"
-              tags="backend,opensource,devops"
-              img="github"
-              link="https://github.com/Drarox/Backend-Benchmark"
-          />
-          <ProjectCard
               :title="t('projects.deepseek.title')"
               :desc="t('projects.deepseek.desc')"
               published="2025"
@@ -206,14 +188,50 @@
               img="github"
               link="https://github.com/Drarox/portfolio"
           />
-<!--          <ProjectCard-->
-<!--              :title="t('projects.secusend.title')"-->
-<!--              :desc="t('projects.secusend.desc')"-->
-<!--              published="2023"-->
-<!--              framework="Vue & Go"-->
-<!--              img="github"-->
-<!--              tags="fullstack,backend,devops"-->
-<!--          />-->
+          <ProjectCard
+              :title="t('projects.google_youtube_redirect.title')"
+              :desc="t('projects.google_youtube_redirect.desc')"
+              published="2023"
+              framework="Javascript"
+              tags="other,opensource"
+              img="/img/projects/gy.png"
+              link="https://github.com/Drarox/GoogleYoutubeRedirect"
+          />
+          <ProjectCard
+              :title="t('projects.json2zod.title')"
+              :desc="t('projects.json2zod.desc')"
+              published="2025"
+              framework="Typescript"
+              img="github"
+              tags="other,opensource"
+              link="https://github.com/Drarox/json2zod"
+          />
+          <ProjectCard
+              :title="t('projects.backend_benchmark.title')"
+              :desc="t('projects.backend_benchmark.desc')"
+              published="2025"
+              framework="Bash & Python"
+              tags="backend,opensource,devops"
+              img="github"
+              link="https://github.com/Drarox/Backend-Benchmark"
+          />
+          <ProjectCard
+              :title="t('projects.node_milight.title')"
+              :desc="t('projects.node_milight.desc')"
+              published="2020"
+              framework="Node.js"
+              img="github"
+              tags="Backend,opensource,devops"
+              link="https://github.com/Drarox/Node_Milight_API"
+          />
+          <ProjectCard
+              :title="t('projects.secusend.title')"
+              :desc="t('projects.secusend.desc')"
+              published="2023"
+              framework="Vue & Go"
+              img="github"
+              tags="fullstack,backend,devops"
+          />
 
         </div>
       </div>
