@@ -166,7 +166,7 @@
               :desc="t('projects.enphasy.desc')"
               published="2025"
               framework="Bun & Hono.js"
-              img="github"
+              img="/img/projects/enphasy.svg"
               tags="Backend,opensource,devops"
               link="https://github.com/Drarox/enphasy"
           />
@@ -202,8 +202,8 @@
               :desc="t('projects.json2zod.desc')"
               published="2025"
               framework="Typescript"
-              img="github"
               tags="other,opensource"
+              img="/img/projects/json2zod.svg"
               link="https://github.com/Drarox/json2zod"
           />
           <ProjectCard
