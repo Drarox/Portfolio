@@ -207,6 +207,15 @@
               link="https://github.com/Drarox/json2zod"
           />
           <ProjectCard
+              :title="t('projects.secusend.title')"
+              :desc="t('projects.secusend.desc')"
+              published="2025"
+              framework="Vue & Go"
+              img="/img/projects/secusend.svg"
+              tags="fullstack,backend,devops"
+              link="https://github.com/SecuSend"
+          />
+          <ProjectCard
               :title="t('projects.backend_benchmark.title')"
               :desc="t('projects.backend_benchmark.desc')"
               published="2025"
@@ -223,14 +232,6 @@
               img="github"
               tags="Backend,opensource,devops"
               link="https://github.com/Drarox/Node_Milight_API"
-          />
-          <ProjectCard
-              :title="t('projects.secusend.title')"
-              :desc="t('projects.secusend.desc')"
-              published="2023"
-              framework="Vue & Go"
-              img="github"
-              tags="fullstack,backend,devops"
           />
 
         </div>
