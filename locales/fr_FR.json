@@ -75,6 +75,10 @@
     "json2zod": {
       "title": "Json2Zod",
       "desc": "Un outil CLI et une bibliothèque pour convertir  JSON en schémas Zod avec des exemples OpenAPI facultatifs."
+    },
+    "lpcalc": {
+      "title": "LP Calculator",
+      "desc": "Une application web permettant de calculer les montants de tokens nécessaires pour une position sur un échange décentralisé (DEX)."
     }
   },
   "lets_talk": {

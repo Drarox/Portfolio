@@ -170,14 +170,23 @@
               tags="Backend,opensource,devops"
               link="https://github.com/Drarox/enphasy"
           />
+<!--          <ProjectCard-->
+<!--              :title="t('projects.deepseek.title')"-->
+<!--              :desc="t('projects.deepseek.desc')"-->
+<!--              published="2025"-->
+<!--              framework="TypeScript"-->
+<!--              img="github"-->
+<!--              tags="other,opensource"-->
+<!--              link="https://github.com/Drarox/DeepSeek-Ext"-->
+<!--          />-->
           <ProjectCard
-              :title="t('projects.deepseek.title')"
-              :desc="t('projects.deepseek.desc')"
+              :title="t('projects.lpcalc.title')"
+              :desc="t('projects.lpcalc.desc')"
               published="2025"
-              framework="TypeScript"
-              img="github"
-              tags="other,opensource"
-              link="https://github.com/Drarox/DeepSeek-Ext"
+              framework="Vue"
+              img="/img/projects/lpcalc.svg"
+              tags="Full Stack,opensource"
+              link="https://github.com/Drarox/LP-Calculator"
           />
           <ProjectCard
               :title="t('projects.portfolio.title')"
