@@ -79,6 +79,10 @@
     "lpcalc": {
       "title": "LP Calculator",
       "desc": "Une application web permettant de calculer les montants de tokens nécessaires pour une position sur un échange décentralisé (DEX)."
+    },
+    "hyperevm": {
+      "title": "HyperEVM Real-Time Gas",
+      "desc": "Une extension de navigateur axée sur la confidentialité, conçue pour suivre en temps réel les frais de gaz sur le réseau HyperEVM."
     }
   },
   "lets_talk": {

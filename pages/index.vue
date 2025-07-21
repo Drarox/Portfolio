@@ -233,14 +233,23 @@
               img="github"
               link="https://github.com/Drarox/Backend-Benchmark"
           />
+<!--          <ProjectCard-->
+<!--              :title="t('projects.node_milight.title')"-->
+<!--              :desc="t('projects.node_milight.desc')"-->
+<!--              published="2020"-->
+<!--              framework="Node.js"-->
+<!--              img="github"-->
+<!--              tags="Backend,opensource,devops"-->
+<!--              link="https://github.com/Drarox/Node_Milight_API"-->
+<!--          />-->
           <ProjectCard
-              :title="t('projects.node_milight.title')"
-              :desc="t('projects.node_milight.desc')"
-              published="2020"
-              framework="Node.js"
-              img="github"
-              tags="Backend,opensource,devops"
-              link="https://github.com/Drarox/Node_Milight_API"
+              :title="t('projects.hyperevm.title')"
+              :desc="t('projects.hyperevm.desc')"
+              published="2025"
+              framework="Javascript"
+              tags="other,opensource"
+              img="/img/projects/hyperevm.svg"
+              link="https://github.com/Drarox/HyperEVM-Real-Time-Gas"
           />
 
         </div>

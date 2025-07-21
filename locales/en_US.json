@@ -79,6 +79,10 @@
     "lpcalc": {
       "title": "LP Calculator",
       "desc": "A web application to calculate the required token amounts for a concentrated liquidity position on a decentralized exchange (DEX)."
+    },
+    "hyperevm": {
+      "title": "HyperEVM Real-Time Gas",
+      "desc": "A privacy-focused browser extension for tracking real-time gas fees on the HyperEVM network."
     }
   },
   "lets_talk":{
