@@ -83,6 +83,10 @@
     "hyperevm": {
       "title": "HyperEVM Real-Time Gas",
       "desc": "Une extension de navigateur axée sur la confidentialité, conçue pour suivre en temps réel les frais de gaz sur le réseau HyperEVM."
+    },
+    "liquidytics": {
+      "title": "Liquidytics",
+      "desc": "Outil de tracking et analyse de positions de liquidité en DeFi."
     }
   },
   "lets_talk": {

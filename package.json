@@ -26,7 +26,8 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "wrangler": "^4.6.0",
-    "eslint": "^9.23.0"
+    "@iconify-json/lucide": "^1.2.68",
+    "eslint": "^9.23.0",
+    "wrangler": "^4.6.0"
   }
 }

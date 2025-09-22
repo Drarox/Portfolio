@@ -146,6 +146,15 @@
               link="https://beta.onao.com/map"
           />
           <ProjectCard
+              :title="t('projects.liquidytics.title')"
+              :desc="t('projects.liquidytics.desc')"
+              published="2025"
+              framework="Bun + Hono & Nuxt"
+              img="/img/projects/liquidytics.svg"
+              tags="Full Stack,backend"
+              link="https://liquidytics.xyz/"
+          />
+          <ProjectCard
               :title="t('projects.marketing_backoffice.title')"
               :desc="t('projects.marketing_backoffice.desc')"
               published="2022"
@@ -165,7 +174,7 @@
               :title="t('projects.enphasy.title')"
               :desc="t('projects.enphasy.desc')"
               published="2025"
-              framework="Bun & Hono.js"
+              framework="Bun & Hono"
               img="/img/projects/enphasy.svg"
               tags="Backend,opensource,devops"
               link="https://github.com/Drarox/enphasy"
@@ -179,15 +188,15 @@
 <!--              tags="other,opensource"-->
 <!--              link="https://github.com/Drarox/DeepSeek-Ext"-->
 <!--          />-->
-          <ProjectCard
-              :title="t('projects.lpcalc.title')"
-              :desc="t('projects.lpcalc.desc')"
-              published="2025"
-              framework="Vue"
-              img="/img/projects/lpcalc.svg"
-              tags="Full Stack,opensource"
-              link="https://github.com/Drarox/LP-Calculator"
-          />
+<!--          <ProjectCard-->
+<!--              :title="t('projects.lpcalc.title')"-->
+<!--              :desc="t('projects.lpcalc.desc')"-->
+<!--              published="2025"-->
+<!--              framework="Vue"-->
+<!--              img="/img/projects/lpcalc.svg"-->
+<!--              tags="Full Stack,opensource"-->
+<!--              link="https://github.com/Drarox/LP-Calculator"-->
+<!--          />-->
           <ProjectCard
               :title="t('projects.portfolio.title')"
               :desc="t('projects.portfolio.desc')"
