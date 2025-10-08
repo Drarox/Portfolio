@@ -151,7 +151,7 @@
               published="2025"
               framework="Bun + Hono & Nuxt"
               img="/img/projects/liquidytics.svg"
-              tags="Full Stack,backend"
+              tags="Full Stack,backend,devops"
               link="https://liquidytics.xyz/"
           />
           <ProjectCard
@@ -162,13 +162,13 @@
               tags="fullstack,backend,devops"
           />
           <ProjectCard
-              :title="t('projects.flutter2048.title')"
-              :desc="t('projects.flutter2048.desc')"
-              published="2020"
+              :title="t('projects.healthconnectlog.title')"
+              :desc="t('projects.healthconnectlog.desc')"
+              published="2025"
               framework="Flutter"
-              tags="mobile,open source"
-              img="/img/projects/2048.png"
-              link="https://github.com/Drarox/Flutter_2048"
+              tags="Mobile,opensource"
+              img="/img/projects/healthconnectlog.png"
+              link="https://github.com/Drarox/Health-Connect-Log"
           />
           <ProjectCard
               :title="t('projects.enphasy.title')"
@@ -197,14 +197,23 @@
 <!--              tags="Full Stack,opensource"-->
 <!--              link="https://github.com/Drarox/LP-Calculator"-->
 <!--          />-->
+<!--          <ProjectCard-->
+<!--              :title="t('projects.portfolio.title')"-->
+<!--              :desc="t('projects.portfolio.desc')"-->
+<!--              published="2025"-->
+<!--              framework="Nuxt"-->
+<!--              tags="Full Stack,opensource,devops"-->
+<!--              img="github"-->
+<!--              link="https://github.com/Drarox/portfolio"-->
+<!--          /> -->
           <ProjectCard
-              :title="t('projects.portfolio.title')"
-              :desc="t('projects.portfolio.desc')"
-              published="2025"
-              framework="Nuxt"
-              tags="Full Stack,opensource,devops"
-              img="github"
-              link="https://github.com/Drarox/portfolio"
+              :title="t('projects.flutter2048.title')"
+              :desc="t('projects.flutter2048.desc')"
+              published="2020"
+              framework="Flutter"
+              tags="mobile,open source"
+              img="/img/projects/2048.png"
+              link="https://github.com/Drarox/Flutter_2048"
           />
           <ProjectCard
               :title="t('projects.google_youtube_redirect.title')"

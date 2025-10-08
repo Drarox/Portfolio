@@ -87,6 +87,10 @@
     "liquidytics": {
       "title": "Liquidytics",
       "desc": "Professional DeFi liquidity position tracking and analytics tool."
+    },
+    "healthconnectlog": {
+      "title": "Health Connect Log",
+      "desc": "Log preset workouts to Health Connect to sync with app like Samsung Health, Google Fit, etc."
     }
   },
   "lets_talk":{
