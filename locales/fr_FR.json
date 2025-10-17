@@ -91,6 +91,10 @@
     "healthconnectlog": {
       "title": "Health Connect Log",
       "desc": "Enregistrez des entraînements prédéfinis dans Health Connect pour les synchroniser Samsung Health, Google Fit, etc."
+    },
+    "revolut": {
+      "title": "Oona x Revolut",
+      "desc": "Intégration de Revolut à Oona pour des transferts rapides et sécurisés via API."
     }
   },
   "lets_talk": {

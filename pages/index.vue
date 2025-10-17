@@ -38,6 +38,13 @@
                 </a>
               </li>
 
+              <li>
+                <a href="https://medium.com/@yannick.burkard/" rel="noreferrer" target="_blank" class="transition hover:opacity-75 text-gray-200" >
+                  <span class="sr-only">Medium</span>
+                  <Icon class="size-7" name="uil:medium-m" />
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -146,6 +153,15 @@
               link="https://beta.onao.com/map"
           />
           <ProjectCard
+              :title="t('projects.revolut.title')"
+              :desc="t('projects.revolut.desc')"
+              published="2023"
+              framework="Express"
+              tags="Backend,devops"
+              img="/img/projects/revolut.png"
+              link="https://www.revolut.com/business/business-api/"
+          />
+          <ProjectCard
               :title="t('projects.liquidytics.title')"
               :desc="t('projects.liquidytics.desc')"
               published="2025"
@@ -188,15 +204,15 @@
 <!--              tags="other,opensource"-->
 <!--              link="https://github.com/Drarox/DeepSeek-Ext"-->
 <!--          />-->
-<!--          <ProjectCard-->
-<!--              :title="t('projects.lpcalc.title')"-->
-<!--              :desc="t('projects.lpcalc.desc')"-->
-<!--              published="2025"-->
-<!--              framework="Vue"-->
-<!--              img="/img/projects/lpcalc.svg"-->
-<!--              tags="Full Stack,opensource"-->
-<!--              link="https://github.com/Drarox/LP-Calculator"-->
-<!--          />-->
+          <ProjectCard
+              :title="t('projects.lpcalc.title')"
+              :desc="t('projects.lpcalc.desc')"
+              published="2025"
+              framework="Vue"
+              img="/img/projects/lpcalc.svg"
+              tags="Full Stack,opensource"
+              link="https://github.com/Drarox/LP-Calculator"
+          />
 <!--          <ProjectCard-->
 <!--              :title="t('projects.portfolio.title')"-->
 <!--              :desc="t('projects.portfolio.desc')"-->
@@ -251,15 +267,15 @@
               img="github"
               link="https://github.com/Drarox/Backend-Benchmark"
           />
-<!--          <ProjectCard-->
-<!--              :title="t('projects.node_milight.title')"-->
-<!--              :desc="t('projects.node_milight.desc')"-->
-<!--              published="2020"-->
-<!--              framework="Node.js"-->
-<!--              img="github"-->
-<!--              tags="Backend,opensource,devops"-->
-<!--              link="https://github.com/Drarox/Node_Milight_API"-->
-<!--          />-->
+          <ProjectCard
+              :title="t('projects.node_milight.title')"
+              :desc="t('projects.node_milight.desc')"
+              published="2020"
+              framework="Node.js"
+              img="github"
+              tags="Backend,opensource,devops"
+              link="https://github.com/Drarox/Node_Milight_API"
+          />
           <ProjectCard
               :title="t('projects.hyperevm.title')"
               :desc="t('projects.hyperevm.desc')"
