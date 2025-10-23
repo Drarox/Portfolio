@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benchmark Results</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      margin: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      max-height: 500px;
+      height: 300px;
+      margin: 3rem auto;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 3rem;
+      color: #444;
+    }
+    table {
+      margin: 3rem auto;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1000px;
+      font-size: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    #envTable {
+      margin: 3rem auto;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      font-size: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    #envTable th, #envTable td {
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    #envTable th {
+      background-color: #f0f0f0;
+      width: 200px;
+    }
+    footer {
+      text-align: center; 
+      margin-top: 80px; 
+      font-size: 0.9em; 
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🚀 Benchmark Results Dashboard</h1>
+
+<h2>📈 Requests per Second</h2>
+<canvas id="requestsChart"></canvas>
+
+<h2>⏱️ Average Latency (ms)</h2>
+<canvas id="latencyChart"></canvas>
+
+<h2>📤 Transfer per Second (kB)</h2>
+<canvas id="transferChart"></canvas>
+
+<h2>📊 Full Results Table (Sorted by Requests/sec)</h2>
+<table id="resultsTable">
+  <thead>
+    <tr>
+      <th>Framework</th>
+      <th>Requests/sec</th>
+      <th>Avg Latency (ms)</th>
+      <th>Transfer/sec (kB)</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h2>🛠 Benchmark Environment</h2>
+<table id="envTable">
+  <tbody>
+    <tr><th>OS</th><td id="os">macOS 15.7.1</td></tr>
+    <tr><th>CPU</th><td id="cpu">Apple M1 Pro (8 cores)</td></tr>
+    <tr><th>RAM</th><td id="ram">16 GB</td></tr>
+    <tr><th>Date</th><td id="date">2025-10-20 10:24 UTC</td></tr>
+    <tr><th>Benchmark Command</th><td><code>wrk -t8 -c1000 -d60s -s post.lua</code></td></tr>
+    <tr><th>Python Version</th><td id="date">3.14.0</td></tr>
+    <tr><th>Node Version</th><td id="date">v22.20.0</td></tr>
+    <tr><th>Bun Version</th><td id="date">1.3.0</td></tr>
+    <tr><th>Deno Version</th><td id="date">deno 2.5.4</td></tr>
+    <tr><th>Go Version</th><td id="date">go1.25.2</td></tr>
+    <tr><th>PHP Version</th><td id="date">8.4.13</td></tr>
+    <tr><th>Java Version</th><td id="date">25</td></tr>
+    <tr><th>Dotnet Version</th><td id="date">9.0.306</td></tr>
+    <tr><th>Ruby Version</th><td id="date">2.6.10p210</td></tr>
+  </tbody>
+</table>
+
+<footer>
+  Results generated using <a href="https://github.com/Drarox/Backend-Benchmark" target="_blank" style="color: #555; text-decoration: none;">
+    Drarox/Backend-Benchmark
+  </a>
+</footer>
+
+<script>
+  const resultsData = [
+  {
+    "framework": "node-http",
+    "requests_per_sec": 52682.81,
+    "avg_latency_ms": 22.34,
+    "transfer_kb_sec": 9574.4,
+    "non_2xx": 0
+  },
+  {
+    "framework": "bun-express",
+    "requests_per_sec": 36230.42,
+    "avg_latency_ms": 27.53,
+    "transfer_kb_sec": 7075.84,
+    "non_2xx": 0
+  },
+  {
+    "framework": "flask",
+    "requests_per_sec": 7467.61,
+    "avg_latency_ms": 170.17,
+    "transfer_kb_sec": 1198.08,
+    "non_2xx": 0
+  },
+  {
+    "framework": "bun",
+    "requests_per_sec": 69493.19,
+    "avg_latency_ms": 14.37,
+    "transfer_kb_sec": 8212.48,
+    "non_2xx": 0
+  },
+  {
+    "framework": "lavarel",
+    "requests_per_sec": 593.33,
+    "avg_latency_ms": 1570.0,
+    "transfer_kb_sec": 634.46,
+    "non_2xx": 0
+  },
+  {
+    "framework": "deno-hono",
+    "requests_per_sec": 58650.14,
+    "avg_latency_ms": 17.02,
+    "transfer_kb_sec": 8243.2,
+    "non_2xx": 0
+  },
+  {
+    "framework": "go-echo",
+    "requests_per_sec": 76197.04,
+    "avg_latency_ms": 13.11,
+    "transfer_kb_sec": 9082.88,
+    "non_2xx": 0
+  },
+  {
+    "framework": "nest-express",
+    "requests_per_sec": 12881.09,
+    "avg_latency_ms": 64.48,
+    "transfer_kb_sec": 3174.4,
+    "non_2xx": 0
+  },
+  {
+    "framework": "deno-express",
+    "requests_per_sec": 19412.99,
+    "avg_latency_ms": 51.32,
+    "transfer_kb_sec": 4229.12,
+    "non_2xx": 0
+  },
+  {
+    "framework": "node-express",
+    "requests_per_sec": 13747.24,
+    "avg_latency_ms": 61.94,
+    "transfer_kb_sec": 3317.76,
+    "non_2xx": 0
+  },
+  {
+    "framework": "rubyonrails",
+    "requests_per_sec": 15301.25,
+    "avg_latency_ms": 65.36,
+    "transfer_kb_sec": 7557.12,
+    "non_2xx": 0
+  },
+  {
+    "framework": "dotnet",
+    "requests_per_sec": 139602.04,
+    "avg_latency_ms": 6.63,
+    "transfer_kb_sec": 23316.48,
+    "non_2xx": 0
+  },
+  {
+    "framework": "bun-hono",
+    "requests_per_sec": 61390.07,
+    "avg_latency_ms": 16.2,
+    "transfer_kb_sec": 7249.92,
+    "non_2xx": 0
+  },
+  {
+    "framework": "go-native",
+    "requests_per_sec": 77470.33,
+    "avg_latency_ms": 13.38,
+    "transfer_kb_sec": 9154.56,
+    "non_2xx": 0
+  },
+  {
+    "framework": "go-gin",
+    "requests_per_sec": 77641.19,
+    "avg_latency_ms": 12.4,
+    "transfer_kb_sec": 10311.68,
+    "non_2xx": 0
+  },
+  {
+    "framework": "go-fiber",
+    "requests_per_sec": 140239.3,
+    "avg_latency_ms": 7.83,
+    "transfer_kb_sec": 16568.32,
+    "non_2xx": 0
+  },
+  {
+    "framework": "fastapi",
+    "requests_per_sec": 63350.31,
+    "avg_latency_ms": 27.3,
+    "transfer_kb_sec": 8540.16,
+    "non_2xx": 0
+  },
+  {
+    "framework": "node-fastify",
+    "requests_per_sec": 40091.47,
+    "avg_latency_ms": 28.25,
+    "transfer_kb_sec": 7208.96,
+    "non_2xx": 0
+  },
+  {
+    "framework": "spring-boot",
+    "requests_per_sec": 53773.51,
+    "avg_latency_ms": 18.25,
+    "transfer_kb_sec": 7208.96,
+    "non_2xx": 0
+  },
+  {
+    "framework": "django",
+    "requests_per_sec": 5611.56,
+    "avg_latency_ms": 180.79,
+    "transfer_kb_sec": 2232.32,
+    "non_2xx": 337274
+  },
+  {
+    "framework": "deno",
+    "requests_per_sec": 64934.13,
+    "avg_latency_ms": 15.39,
+    "transfer_kb_sec": 9134.08,
+    "non_2xx": 0
+  },
+  {
+    "framework": "nest-fastify",
+    "requests_per_sec": 43607.26,
+    "avg_latency_ms": 26.84,
+    "transfer_kb_sec": 8048.64,
+    "non_2xx": 0
+  },
+  {
+    "framework": "koa",
+    "requests_per_sec": 38182.88,
+    "avg_latency_ms": 29.94,
+    "transfer_kb_sec": 6819.84,
+    "non_2xx": 0
+  },
+  {
+    "framework": "bun-elysia",
+    "requests_per_sec": 64531.05,
+    "avg_latency_ms": 15.47,
+    "transfer_kb_sec": 7628.8,
+    "non_2xx": 0
+  }
+];
+
+  function createChart(ctxId, label, data, color) {
+    const ctx = document.getElementById(ctxId).getContext('2d');
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: data.map(d => d.framework),
+        datasets: [{
+          label,
+          data: data.map(d => d.value),
+          backgroundColor: color,
+          borderColor: '#111',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: { mode: 'index', intersect: false }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  }
+
+  // Sort individually for each chart
+  const rpsSorted = [...resultsData].sort((a, b) => a.requests_per_sec - b.requests_per_sec);
+  const latencySorted = [...resultsData].sort((a, b) => b.avg_latency_ms - a.avg_latency_ms);
+  const transferSorted = [...resultsData].sort((a, b) => a.transfer_kb_sec - b.transfer_kb_sec);
+
+  createChart('requestsChart', 'Requests/sec', rpsSorted.map(d => ({ framework: d.framework, value: d.requests_per_sec })), '#0d6efd');
+  createChart('latencyChart', 'Average Latency (ms)', latencySorted.map(d => ({ framework: d.framework, value: d.avg_latency_ms })), '#dc3545');
+  createChart('transferChart', 'Transfer/sec (kB)', transferSorted.map(d => ({ framework: d.framework, value: d.transfer_kb_sec })), '#198754');
+
+  // Tabel view
+  const sortedData = [...resultsData].sort((a, b) => b.requests_per_sec - a.requests_per_sec);
+  const tableBody = document.querySelector("#resultsTable tbody");
+
+  sortedData.forEach(row => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${row.framework}</td>
+      <td>${row.requests_per_sec.toFixed(2)}</td>
+      <td>${row.avg_latency_ms.toFixed(2)}</td>
+      <td>${row.transfer_kb_sec.toFixed(2)}</td>
+    `;
+    tableBody.appendChild(tr);
+  });
+
+</script>
+</body>
+</html>
