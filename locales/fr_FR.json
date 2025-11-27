@@ -95,6 +95,10 @@
     "revolut": {
       "title": "Oona x Revolut",
       "desc": "Intégration de Revolut à Oona pour des transferts rapides et sécurisés via API."
+    },
+    "gmd": {
+      "title": "Devis GMD",
+      "desc": "Outil générant des devis instantanés à partir de fichiers DXF clients traités en backend."
     }
   },
   "lets_talk": {

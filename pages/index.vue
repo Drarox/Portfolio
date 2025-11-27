@@ -178,6 +178,15 @@
               tags="fullstack,backend,devops"
           />
           <ProjectCard
+              :title="t('projects.gmd.title')"
+              :desc="t('projects.gmd.desc')"
+              published="2025"
+              framework="FastAPI & Nuxt"
+              tags="Backend, fullstack"
+              img="/img/projects/gmd.svg"
+              link="https://devis-gmd.pages.dev/"
+          />
+          <ProjectCard
               :title="t('projects.healthconnectlog.title')"
               :desc="t('projects.healthconnectlog.desc')"
               published="2025"
@@ -222,15 +231,6 @@
 <!--              img="github"-->
 <!--              link="https://github.com/Drarox/portfolio"-->
 <!--          /> -->
-          <ProjectCard
-              :title="t('projects.flutter2048.title')"
-              :desc="t('projects.flutter2048.desc')"
-              published="2020"
-              framework="Flutter"
-              tags="mobile,open source"
-              img="/img/projects/2048.png"
-              link="https://github.com/Drarox/Flutter_2048"
-          />
           <ProjectCard
               :title="t('projects.google_youtube_redirect.title')"
               :desc="t('projects.google_youtube_redirect.desc')"
@@ -277,14 +277,24 @@
               link="https://github.com/Drarox/Node_Milight_API"
           />
           <ProjectCard
-              :title="t('projects.hyperevm.title')"
-              :desc="t('projects.hyperevm.desc')"
-              published="2025"
-              framework="Javascript"
-              tags="other,opensource"
-              img="/img/projects/hyperevm.svg"
-              link="https://github.com/Drarox/HyperEVM-Real-Time-Gas"
+              :title="t('projects.flutter2048.title')"
+              :desc="t('projects.flutter2048.desc')"
+              published="2020"
+              framework="Flutter"
+              tags="mobile,open source"
+              img="/img/projects/2048.png"
+              link="https://github.com/Drarox/Flutter_2048"
           />
+<!--          <ProjectCard-->
+<!--              :title="t('projects.hyperevm.title')"-->
+<!--              :desc="t('projects.hyperevm.desc')"-->
+<!--              published="2025"-->
+<!--              framework="Javascript"-->
+<!--              tags="other,opensource"-->
+<!--              img="/img/projects/hyperevm.svg"-->
+<!--              link="https://github.com/Drarox/HyperEVM-Real-Time-Gas"-->
+<!--          /> -->
+
 
         </div>
       </div>
