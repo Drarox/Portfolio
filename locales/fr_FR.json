@@ -99,6 +99,10 @@
     "gmd": {
       "title": "Devis GMD",
       "desc": "Outil générant des devis instantanés à partir de fichiers DXF clients traités en backend."
+    },
+    "arpg": {
+      "title": "ARPG Pulse",
+      "desc": "Plateforme de suivi et d'analyse de performances pour les joueurs de jeux vidéo de type Action-RPG."
     }
   },
   "lets_talk": {

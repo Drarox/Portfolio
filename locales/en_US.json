@@ -1,34 +1,34 @@
 {
-  "home":{
+  "home": {
     "subtitle": "Software Engineer, specializing in Backend & DevOps"
   },
-  "about":{
+  "about": {
     "title": "About Me",
     "text1": "Passionate about technology since childhood, I’ve spent over a decade specializing in backend development and system administration. I build reliable, secure, and scalable applications with Node.js (Express, NestJS), Go, and PostgreSQL, while also managing deployments, cloud infrastructure, and server optimization with Linux and Docker.",
     "text2": "With a degree in Computer Science from the University of Strasbourg, I started my career in traditional software companies before transitioning to freelance. In 2020, I co-founded Oona (formerly Rec'im), where I lead development as CTO, building a mobile marketing and gaming platform with Flutter that supports local businesses. We also develop custom software and game solutions for enterprise clients. My expertise spans backend architecture, cloud infrastructure, and full-stack development with modern frameworks like Nuxt and Tailwind.",
     "text3": "I thrive on solving complex technical challenges and turning ideas into efficient, real-world solutions."
   },
-  "technologies":{
+  "technologies": {
     "title": "Technologies"
   },
-  "projects":{
+  "projects": {
     "title": "Projects",
     "subtitle": "Selection of my some of my projects",
     "published": "Published",
     "framework": "Framework",
-    "oona":{
+    "oona": {
       "title": "Oona",
       "desc": "Mobile & Web marketing and gaming platform that supports local businesses."
     },
-    "dotc":{
+    "dotc": {
       "title": "VAN DAMME : Dawn of Chihuahuas",
       "desc": "Endless runner game with JCVD to rescue dogs."
     },
-    "zw":{
+    "zw": {
       "title": "Zak & Wowo",
       "desc": "Mobile game for the movie Zak & Wowo."
     },
-    "recim_business":{
+    "recim_business": {
       "title": "Rec'im Business",
       "desc": "Dashboard for businesses to interact with the Rec'im app."
     },
@@ -99,13 +99,17 @@
     "gmd": {
       "title": "GMD Quotes",
       "desc": "A tool that instantly generates quotes from client-uploaded DXF files processed in the backend."
+    },
+    "arpg": {
+      "title": "ARPG Pulse",
+      "desc": "A platform for tracking and analyzing performance for players of Action-RPG games."
     }
   },
-  "lets_talk":{
+  "lets_talk": {
     "title": "Got an idea or a project to discuss?",
     "button": "Let's Talk!"
   },
-  "contact":{
+  "contact": {
     "title": "Let's Talk!",
     "subtitle": "Got an idea or a project to discuss?",
     "first_name": "First Name",
@@ -116,7 +120,7 @@
     "message": "Message",
     "send": "Send message"
   },
-  "footer":{
+  "footer": {
     "subtitle": "Building Scalable & Secure Software",
     "nav": {
       "home": "Home",

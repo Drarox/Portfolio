@@ -285,6 +285,15 @@
               img="/img/projects/2048.png"
               link="https://github.com/Drarox/Flutter_2048"
           />
+          <ProjectCard
+              :title="t('projects.arpg.title')"
+              :desc="t('projects.arpg.desc')"
+              published="2026"
+              framework="Bun + Hono & Nuxt"
+              tags="fullstack,backend"
+              img="/img/projects/arpg.svg"
+              link="https://arpg-pulse.pages.dev/"
+          />
 <!--          <ProjectCard-->
 <!--              :title="t('projects.hyperevm.title')"-->
 <!--              :desc="t('projects.hyperevm.desc')"-->
