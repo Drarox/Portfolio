@@ -106,205 +106,33 @@
 
         <p class="mt-4 text-center text-gray-700">{{ $t('projects.subtitle') }}</p>
 
+        <div class="mt-8 flex flex-wrap justify-center gap-2">
+          <button
+            v-for="filter in projectFilters"
+            :key="filter.key"
+            type="button"
+            class="rounded-full border px-4 py-2 text-sm font-medium transition"
+            :class="selectedProjectTag === filter.key
+              ? 'border-gray-200 bg-gray-200 text-gray-700'
+              : 'border-gray-300 bg-white text-gray-700 hover:border-gray-400 hover:text-gray-900'"
+            @click="selectedProjectTag = filter.key"
+          >
+            {{ t(filter.label) }}
+          </button>
+        </div>
+
         <div class="mt-12 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-
           <ProjectCard
-              :title="t('projects.oona.title')"
-              :desc="t('projects.oona.desc')"
-              published="2020"
-              framework="Flutter & Express"
-              tags="Full Stack,Mobile,Backend,devops"
-              img="/img/projects/oona.png"
-              link="https://oona.win"
+            v-for="project in filteredProjects"
+            :key="project.key"
+            :title="project.title"
+            :desc="project.desc"
+            :published="project.published"
+            :framework="project.framework"
+            :tags="project.tags"
+            :img="project.img"
+            :link="project.link"
           />
-          <ProjectCard
-              :title="t('projects.dotc.title')"
-              :desc="t('projects.dotc.desc')"
-              published="2023"
-              framework="Unity & NestJS"
-              tags="Backend,Mobile,devops"
-              img="/img/projects/jcvd.png"
-              link="https://awarecorp-studios.com/dawn-of-the-chihuahuas/"
-          />
-          <ProjectCard
-              :title="t('projects.zw.title')"
-              :desc="t('projects.zw.desc')"
-              published="2024"
-              framework="Unity & NestJS"
-              tags="Backend,Mobile,devops"
-              img="/img/projects/zw.png"
-              link="https://oona-website.pages.dev/Zak&Wowo"
-          />
-          <ProjectCard
-              :title="t('projects.recim_business.title')"
-              :desc="t('projects.recim_business.desc')"
-              published="2020"
-              framework="Angular & Express"
-              img="/img/projects/recim.png"
-              tags="fullstack,backend,devops"
-          />
-          <ProjectCard
-              :title="t('projects.onao.title')"
-              :desc="t('projects.onao.desc')"
-              published="2024"
-              framework="Nuxt & NestJS"
-              tags="Full Stack,Backend,devops"
-              img="/img/projects/onao.png"
-              link="https://beta.onao.com/map"
-          />
-          <ProjectCard
-              :title="t('projects.revolut.title')"
-              :desc="t('projects.revolut.desc')"
-              published="2023"
-              framework="Express"
-              tags="Backend,devops"
-              img="/img/projects/revolut.png"
-              link="https://www.revolut.com/business/business-api/"
-          />
-          <ProjectCard
-              :title="t('projects.liquidytics.title')"
-              :desc="t('projects.liquidytics.desc')"
-              published="2025"
-              framework="Bun + Hono & Nuxt"
-              img="/img/projects/liquidytics.svg"
-              tags="Full Stack,backend,devops"
-              link="https://liquidytics.xyz/"
-          />
-          <ProjectCard
-              :title="t('projects.marketing_backoffice.title')"
-              :desc="t('projects.marketing_backoffice.desc')"
-              published="2022"
-              framework="Vue & Express"
-              tags="fullstack,backend,devops"
-          />
-          <ProjectCard
-              :title="t('projects.gmd.title')"
-              :desc="t('projects.gmd.desc')"
-              published="2025"
-              framework="FastAPI & Nuxt"
-              tags="Backend, fullstack"
-              img="/img/projects/gmd.svg"
-              link="https://devis-gmd.pages.dev/"
-          />
-          <ProjectCard
-              :title="t('projects.healthconnectlog.title')"
-              :desc="t('projects.healthconnectlog.desc')"
-              published="2025"
-              framework="Flutter"
-              tags="Mobile,opensource"
-              img="/img/projects/healthconnectlog.png"
-              link="https://github.com/Drarox/Health-Connect-Log"
-          />
-          <ProjectCard
-              :title="t('projects.enphasy.title')"
-              :desc="t('projects.enphasy.desc')"
-              published="2025"
-              framework="Bun & Hono"
-              img="/img/projects/enphasy.svg"
-              tags="Backend,opensource,devops"
-              link="https://github.com/Drarox/enphasy"
-          />
-<!--          <ProjectCard-->
-<!--              :title="t('projects.deepseek.title')"-->
-<!--              :desc="t('projects.deepseek.desc')"-->
-<!--              published="2025"-->
-<!--              framework="TypeScript"-->
-<!--              img="github"-->
-<!--              tags="other,opensource"-->
-<!--              link="https://github.com/Drarox/DeepSeek-Ext"-->
-<!--          />-->
-          <ProjectCard
-              :title="t('projects.lpcalc.title')"
-              :desc="t('projects.lpcalc.desc')"
-              published="2025"
-              framework="Vue"
-              img="/img/projects/lpcalc.svg"
-              tags="Full Stack,opensource"
-              link="https://github.com/Drarox/LP-Calculator"
-          />
-<!--          <ProjectCard-->
-<!--              :title="t('projects.portfolio.title')"-->
-<!--              :desc="t('projects.portfolio.desc')"-->
-<!--              published="2025"-->
-<!--              framework="Nuxt"-->
-<!--              tags="Full Stack,opensource,devops"-->
-<!--              img="github"-->
-<!--              link="https://github.com/Drarox/portfolio"-->
-<!--          /> -->
-          <ProjectCard
-              :title="t('projects.google_youtube_redirect.title')"
-              :desc="t('projects.google_youtube_redirect.desc')"
-              published="2023"
-              framework="Javascript"
-              tags="other,opensource"
-              img="/img/projects/gy.png"
-              link="https://github.com/Drarox/GoogleYoutubeRedirect"
-          />
-          <ProjectCard
-              :title="t('projects.json2zod.title')"
-              :desc="t('projects.json2zod.desc')"
-              published="2025"
-              framework="Typescript"
-              tags="other,opensource"
-              img="/img/projects/json2zod.svg"
-              link="https://github.com/Drarox/json2zod"
-          />
-          <ProjectCard
-              :title="t('projects.secusend.title')"
-              :desc="t('projects.secusend.desc')"
-              published="2025"
-              framework="Vue & Go"
-              img="/img/projects/secusend.svg"
-              tags="fullstack,backend,devops"
-              link="https://github.com/SecuSend"
-          />
-          <ProjectCard
-              :title="t('projects.backend_benchmark.title')"
-              :desc="t('projects.backend_benchmark.desc')"
-              published="2025"
-              framework="Bash & Python"
-              tags="backend,opensource,devops"
-              img="github"
-              link="https://github.com/Drarox/Backend-Benchmark"
-          />
-          <ProjectCard
-              :title="t('projects.node_milight.title')"
-              :desc="t('projects.node_milight.desc')"
-              published="2020"
-              framework="Node.js"
-              img="github"
-              tags="Backend,opensource,devops"
-              link="https://github.com/Drarox/Node_Milight_API"
-          />
-          <ProjectCard
-              :title="t('projects.flutter2048.title')"
-              :desc="t('projects.flutter2048.desc')"
-              published="2020"
-              framework="Flutter"
-              tags="mobile,open source"
-              img="/img/projects/2048.png"
-              link="https://github.com/Drarox/Flutter_2048"
-          />
-          <ProjectCard
-              :title="t('projects.arpg.title')"
-              :desc="t('projects.arpg.desc')"
-              published="2026"
-              framework="Bun + Hono & Nuxt"
-              tags="fullstack,backend"
-              img="/img/projects/arpg.svg"
-              link="https://arpg-pulse.pages.dev/"
-          />
-<!--          <ProjectCard-->
-<!--              :title="t('projects.hyperevm.title')"-->
-<!--              :desc="t('projects.hyperevm.desc')"-->
-<!--              published="2025"-->
-<!--              framework="Javascript"-->
-<!--              tags="other,opensource"-->
-<!--              img="/img/projects/hyperevm.svg"-->
-<!--              link="https://github.com/Drarox/HyperEVM-Real-Time-Gas"-->
-<!--          /> -->
-
-
         </div>
       </div>
     </section>
@@ -328,6 +156,83 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
+type ProjectTag = 'fullstack' | 'backend' | 'mobile' | 'devops' | 'other' | 'opensource';
+type ProjectFilter = 'all' | ProjectTag;
+
+type ProjectItem = {
+  key: string;
+  title: string;
+  desc: string;
+  published: string
+  framework: string
+  tags: string
+  img?: string
+  link?: string
+}
+
+const projectFilters: Array<{ key: ProjectFilter, label: string }> = [
+  { key: 'all', label: 'projects.filters.all' },
+  { key: 'fullstack', label: 'projects.filters.fullstack' },
+  { key: 'backend', label: 'projects.filters.backend' },
+  { key: 'mobile', label: 'projects.filters.mobile' },
+  { key: 'devops', label: 'projects.filters.devops' },
+  { key: 'opensource', label: 'projects.filters.opensource' },
+  { key: 'other', label: 'projects.filters.other' }
+];
+
+const selectedProjectTag = ref<ProjectFilter>('all');
+
+const normalizeTag = (tag: string): ProjectTag | '' => {
+  const normalized = tag.toLowerCase().trim().replace(/\s+/g, '');
+
+  if (normalized.startsWith('full')) return 'fullstack';
+  if (normalized.startsWith('backend')) return 'backend';
+  if (normalized.startsWith('mobile')) return 'mobile';
+  if (normalized.startsWith('devops')) return 'devops';
+  if (normalized.startsWith('other')) return 'other';
+  if (normalized.startsWith('open')) return 'opensource';
+
+  return '';
+}
+
+const getProjectTags = (tags: string): ProjectTag[] =>
+  tags
+    .split(',')
+    .map((tag) => normalizeTag(tag))
+    .filter((tag): tag is ProjectTag => Boolean(tag));
+
+const projects = computed<ProjectItem[]>(() => [
+  { key: 'oona', title: t('projects.oona.title'), desc: t('projects.oona.desc'), published: '2020', framework: 'Flutter & Express', tags: 'Full Stack,Mobile,Backend,devops', img: '/img/projects/oona.png', link: 'https://oona.win' },
+  { key: 'dotc', title: t('projects.dotc.title'), desc: t('projects.dotc.desc'), published: '2023', framework: 'Unity & NestJS', tags: 'Backend,Mobile,devops', img: '/img/projects/jcvd.png', link: 'https://awarecorp-studios.com/dawn-of-the-chihuahuas/' },
+  { key: 'zw', title: t('projects.zw.title'), desc: t('projects.zw.desc'), published: '2024', framework: 'Unity & NestJS', tags: 'Backend,Mobile,devops', img: '/img/projects/zw.png', link: 'https://oona-website.pages.dev/Zak&Wowo' },
+  { key: 'recim_business', title: t('projects.recim_business.title'), desc: t('projects.recim_business.desc'), published: '2020', framework: 'Angular & Express', tags: 'fullstack,backend,devops', img: '/img/projects/recim.png' },
+  { key: 'onao', title: t('projects.onao.title'), desc: t('projects.onao.desc'), published: '2024', framework: 'Nuxt & NestJS', tags: 'Full Stack,Backend,devops', img: '/img/projects/onao.png', link: 'https://beta.onao.com/map' },
+  { key: 'revolut', title: t('projects.revolut.title'), desc: t('projects.revolut.desc'), published: '2023', framework: 'Express', tags: 'Backend,devops', img: '/img/projects/revolut.png', link: 'https://www.revolut.com/business/business-api/' },
+  { key: 'liquidytics', title: t('projects.liquidytics.title'), desc: t('projects.liquidytics.desc'), published: '2025', framework: 'Bun + Hono & Nuxt', tags: 'Full Stack,backend,devops', img: '/img/projects/liquidytics.svg', link: 'https://liquidytics.xyz/' },
+  { key: 'marketing_backoffice', title: t('projects.marketing_backoffice.title'), desc: t('projects.marketing_backoffice.desc'), published: '2022', framework: 'Vue & Express', tags: 'fullstack,backend,devops' },
+  { key: 'gmd', title: t('projects.gmd.title'), desc: t('projects.gmd.desc'), published: '2025', framework: 'FastAPI & Nuxt', tags: 'Backend, fullstack', img: '/img/projects/gmd.svg', link: 'https://devis-gmd.pages.dev/' },
+  { key: 'healthconnectlog', title: t('projects.healthconnectlog.title'), desc: t('projects.healthconnectlog.desc'), published: '2025', framework: 'Flutter', tags: 'Mobile,opensource', img: '/img/projects/healthconnectlog.png', link: 'https://github.com/Drarox/Health-Connect-Log' },
+  { key: 'enphasy', title: t('projects.enphasy.title'), desc: t('projects.enphasy.desc'), published: '2025', framework: 'Bun & Hono', tags: 'Backend,opensource,devops', img: '/img/projects/enphasy.svg', link: 'https://github.com/Drarox/enphasy' },
+  // { key: 'deepseek', title: t('projects.deepseek.title'), desc: t('projects.deepseek.desc'), published: '2025', framework: 'TypeScript', tags: 'other,opensource', img: 'github', link: 'https://github.com/Drarox/DeepSeek-Ext' },
+  { key: 'lpcalc', title: t('projects.lpcalc.title'), desc: t('projects.lpcalc.desc'), published: '2025', framework: 'Vue', tags: 'Full Stack,opensource', img: '/img/projects/lpcalc.svg', link: 'https://github.com/Drarox/LP-Calculator' },
+  // { key: 'portfolio', title: t('projects.portfolio.title'), desc: t('projects.portfolio.desc'), published: '2025', framework: 'Nuxt', tags: 'Full Stack,opensource,devops', img: 'github', link: 'https://github.com/Drarox/portfolio' },
+  { key: 'google_youtube_redirect', title: t('projects.google_youtube_redirect.title'), desc: t('projects.google_youtube_redirect.desc'), published: '2023', framework: 'Javascript', tags: 'other,opensource', img: '/img/projects/gy.png', link: 'https://github.com/Drarox/GoogleYoutubeRedirect' },
+  { key: 'json2zod', title: t('projects.json2zod.title'), desc: t('projects.json2zod.desc'), published: '2025', framework: 'Typescript', tags: 'other,opensource', img: '/img/projects/json2zod.svg', link: 'https://github.com/Drarox/json2zod' },
+  { key: 'secusend', title: t('projects.secusend.title'), desc: t('projects.secusend.desc'), published: '2025', framework: 'Vue & Go', tags: 'fullstack,backend,devops', img: '/img/projects/secusend.svg', link: 'https://github.com/SecuSend' },
+  { key: 'backend_benchmark', title: t('projects.backend_benchmark.title'), desc: t('projects.backend_benchmark.desc'), published: '2025', framework: 'Bash & Python', tags: 'backend,opensource,devops', img: 'github', link: 'https://github.com/Drarox/Backend-Benchmark' },
+  { key: 'node_milight', title: t('projects.node_milight.title'), desc: t('projects.node_milight.desc'), published: '2020', framework: 'Node.js', tags: 'Backend,opensource,devops', img: 'github', link: 'https://github.com/Drarox/Node_Milight_API' },
+  { key: 'flutter2048', title: t('projects.flutter2048.title'), desc: t('projects.flutter2048.desc'), published: '2020', framework: 'Flutter', tags: 'mobile,open source', img: '/img/projects/2048.png', link: 'https://github.com/Drarox/Flutter_2048' },
+  { key: 'arpg', title: t('projects.arpg.title'), desc: t('projects.arpg.desc'), published: '2026', framework: 'Bun + Hono & Nuxt', tags: 'fullstack,backend', img: '/img/projects/arpg.svg', link: 'https://arpg-pulse.pages.dev/' },
+  // { key: 'hyperevm', title: t('projects.hyperevm.title'), desc: t('projects.hyperevm.desc'), published: '2025', framework: 'Javascript', tags: 'other,opensource', img: '/img/projects/hyperevm.svg', link: 'https://github.com/Drarox/HyperEVM-Real-Time-Gas' }
+]);
+
+const filteredProjects = computed(() => {
+  if (selectedProjectTag.value === 'all')
+    return projects.value
+
+  return projects.value.filter((project) => getProjectTags(project.tags).includes(selectedProjectTag.value as ProjectTag));
+});
+
 const techItems = [
   '/img/tech/node.png',
   '/img/tech/nest.png',
@@ -337,5 +242,5 @@ const techItems = [
   '/img/tech/docker.png',
   '/img/tech/flutter.png',
   '/img/tech/express.png'
-]
+];
 </script>

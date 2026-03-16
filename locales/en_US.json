@@ -14,6 +14,15 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Selection of my some of my projects",
+    "filters": {
+      "all": "All",
+      "fullstack": "Full Stack",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "devops": "DevOps",
+      "opensource": "Open Source",
+      "other": "Other"
+    },
     "published": "Published",
     "framework": "Framework",
     "oona": {
@@ -102,7 +111,7 @@
     },
     "arpg": {
       "title": "ARPG Pulse",
-      "desc": "A platform for tracking and analyzing performance for players of Action-RPG games."
+      "desc": "A platform for tracking and analyzing performance of a selection of Action-RPG games."
     }
   },
   "lets_talk": {
