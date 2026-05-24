@@ -219,11 +219,12 @@ const projects = computed<ProjectItem[]>(() => [
   { key: 'google_youtube_redirect', title: t('projects.google_youtube_redirect.title'), desc: t('projects.google_youtube_redirect.desc'), published: '2023', framework: 'Javascript', tags: 'other,opensource', img: '/img/projects/gy.png', link: 'https://github.com/Drarox/GoogleYoutubeRedirect' },
   { key: 'json2zod', title: t('projects.json2zod.title'), desc: t('projects.json2zod.desc'), published: '2025', framework: 'Typescript', tags: 'other,opensource', img: '/img/projects/json2zod.svg', link: 'https://github.com/Drarox/json2zod' },
   { key: 'secusend', title: t('projects.secusend.title'), desc: t('projects.secusend.desc'), published: '2025', framework: 'Vue & Go', tags: 'fullstack,backend,devops', img: '/img/projects/secusend.svg', link: 'https://github.com/SecuSend' },
+  { key: 'proxydash', title: t('projects.proxydash.title'), desc: t('projects.proxydash.desc'), published: '2026', framework: 'Vue & Bun', tags: 'fullstack,backend,devops,opensource', img: '/img/projects/proxydash.png', link: 'https://github.com/Drarox/ProxyDash' },
   { key: 'backend_benchmark', title: t('projects.backend_benchmark.title'), desc: t('projects.backend_benchmark.desc'), published: '2025', framework: 'Bash & Python', tags: 'backend,opensource,devops', img: 'github', link: 'https://github.com/Drarox/Backend-Benchmark' },
-  { key: 'node_milight', title: t('projects.node_milight.title'), desc: t('projects.node_milight.desc'), published: '2020', framework: 'Node.js', tags: 'Backend,opensource,devops', img: 'github', link: 'https://github.com/Drarox/Node_Milight_API' },
   { key: 'flutter2048', title: t('projects.flutter2048.title'), desc: t('projects.flutter2048.desc'), published: '2020', framework: 'Flutter', tags: 'mobile,open source', img: '/img/projects/2048.png', link: 'https://github.com/Drarox/Flutter_2048' },
   { key: 'arpg', title: t('projects.arpg.title'), desc: t('projects.arpg.desc'), published: '2026', framework: 'Bun + Hono & Nuxt', tags: 'fullstack,backend', img: '/img/projects/arpg.svg', link: 'https://arpg-pulse.pages.dev/' },
-  // { key: 'hyperevm', title: t('projects.hyperevm.title'), desc: t('projects.hyperevm.desc'), published: '2025', framework: 'Javascript', tags: 'other,opensource', img: '/img/projects/hyperevm.svg', link: 'https://github.com/Drarox/HyperEVM-Real-Time-Gas' }
+  { key: 'hyperevm', title: t('projects.hyperevm.title'), desc: t('projects.hyperevm.desc'), published: '2025', framework: 'Javascript', tags: 'other,opensource', img: '/img/projects/hyperevm.svg', link: 'https://github.com/Drarox/HyperEVM-Real-Time-Gas' },
+  { key: 'node_milight', title: t('projects.node_milight.title'), desc: t('projects.node_milight.desc'), published: '2020', framework: 'Node.js', tags: 'Backend,opensource,devops', img: 'github', link: 'https://github.com/Drarox/Node_Milight_API' },
 ]);
 
 const filteredProjects = computed(() => {

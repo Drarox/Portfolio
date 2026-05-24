@@ -112,6 +112,10 @@
     "arpg": {
       "title": "ARPG Pulse",
       "desc": "A platform for tracking and analyzing performance of a selection of Action-RPG games."
+    },
+    "proxydash": {
+      "title": "ProxyDash",
+      "desc": "A lightweight, self-hosted dashboard for visualising your Nginx reverse-proxy configuration."
     }
   },
   "lets_talk": {
