@@ -116,6 +116,10 @@
     "proxydash": {
       "title": "ProxyDash",
       "desc": "Tableau de bord léger pour visualiser votre configuration de reverse-proxy Nginx."
+    },
+    "lbc-tools": {
+      "title": "LBC Tools",
+      "desc": "Outils pour Leboncoin."
     }
   },
   "lets_talk": {
